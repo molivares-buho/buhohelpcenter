@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASN y Estados de Inventario · Help Center</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <a class="topbar-logo" href="index.html">BUHo <span>Help</span></a>
+  <div class="topbar-divider"></div>
+  <span class="topbar-section">Inventario · ASN y Estados</span>
+  <div class="topbar-right">
+    <span class="topbar-badge">v1.0</span>
+  </div>
+</nav>
+
+<aside class="sidebar">
+  <div class="sidebar-section-label">Inicio</div>
+  <a href="index.html"><span class="icon">🏠</span> Inicio</a>
+
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-section-label">Inventario</div>
+  <a href="asn.html" class="active"><span class="icon">📋</span> ASN y Estados</a>
+  <a href="kitting.html"><span class="icon">📦</span> Kitting y Ensamble</a>
+  <a href="#" class="coming-soon"><span class="icon">🔄</span> Reabastecimiento</a>
+  <a href="#" class="coming-soon"><span class="icon">🔢</span> Conteo de ciclos</a>
+
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-section-label">Pedidos</div>
+  <a href="#" class="coming-soon"><span class="icon">🛒</span> Crear una orden</a>
+  <a href="#" class="coming-soon"><span class="icon">🚚</span> Proceso de envío</a>
+  <a href="#" class="coming-soon"><span class="icon">↩️</span> Devoluciones</a>
+
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-section-label">Operaciones</div>
+  <a href="#" class="coming-soon"><span class="icon">🏭</span> Zonas del almacén</a>
+  <a href="#" class="coming-soon"><span class="icon">🏷️</span> Etiquetado</a>
+  <a href="#" class="coming-soon"><span class="icon">📊</span> Reportes</a>
+</aside>
+
+<main class="main">
+
+  <div class="breadcrumb">
+    <a href="index.html">Inicio</a>
+    <span class="sep">/</span>
+    <a href="#">Inventario</a>
+    <span class="sep">/</span>
+    <span>ASN y Estados</span>
+  </div>
+
+  <div class="page-hero" data-bg="ASN">
+    <div class="page-hero-tag">Inventario</div>
+    <h1>ASN y Estados<br>de Inventario</h1>
+    <p>Qué es un Advanced Shipping Notice, su ciclo de vida y el significado de cada columna que ves en el sistema.</p>
+  </div>
+
+  <!-- DEFINICION -->
+  <h2 class="section-heading">¿Qué es un ASN?</h2>
+  <p class="section-sub">Advanced Shipping Notice — Aviso de Envío Anticipado</p>
+
+  <div class="concept-card">
+    <div class="concept-header" style="background:#1B4FD8">
+      <div class="num">Definición</div>
+      <div class="title">Advanced Shipping Notice</div>
+      <div class="subtitle">Documento electrónico previo a la llegada</div>
+    </div>
+    <div class="concept-body">
+      <p class="concept-def">Es un documento electrónico que el proveedor o vendedor envía al almacén <strong>antes de que llegue la mercancía</strong>. Le avisa qué productos vienen, en qué cantidades, en qué cajas y cuándo llegará — para que el almacén se prepare.</p>
+      <div class="concept-analogy">
+        <strong>📦 En simple</strong>
+        Es como avisarle a alguien que viene a visitarte antes de llegar: saben cuántas personas son, qué traen y a qué hora llegan. Así el almacén puede preparar espacio, personal y etiquetas.
+      </div>
+    </div>
+  </div>
+
+  <!-- LIFECYCLE -->
+  <h2 class="section-heading" style="margin-top:40px">Ciclo de vida de un ASN</h2>
+  <p class="section-sub">Desde que se crea hasta que el inventario queda disponible para vender</p>
+
+  <div class="lifecycle">
+    <div class="lc-step">
+      <div class="lc-dot" style="background:#EEF3FF">📝</div>
+      <span class="lc-num" style="background:#1B4FD8">1</span>
+      <div class="lc-name">Creado</div>
+      <div class="lc-desc">Proveedor llena SKUs, cantidades y fecha</div>
+    </div>
+    <div class="lc-step">
+      <div class="lc-dot" style="background:#FFF8EC">🚚</div>
+      <span class="lc-num" style="background:#B86A00">2</span>
+      <div class="lc-name">En tránsito</div>
+      <div class="lc-desc">Mercancía salió. Almacén lo espera</div>
+    </div>
+    <div class="lc-step">
+      <div class="lc-dot" style="background:#EDFAF6">📦</div>
+      <span class="lc-num" style="background:#0E7C6B">3</span>
+      <div class="lc-name">Recibido</div>
+      <div class="lc-desc">Llega. Se escanea y se cuenta</div>
+    </div>
+    <div class="lc-step">
+      <div class="lc-dot" style="background:#F5F0FF">🔍</div>
+      <span class="lc-num" style="background:#5B35B8">4</span>
+      <div class="lc-name">Procesado</div>
+      <div class="lc-desc">Se verifica contra el ASN</div>
+    </div>
+    <div class="lc-step">
+      <div class="lc-dot" style="background:#F0FFF8">📍</div>
+      <span class="lc-num" style="background:#166B3E">5</span>
+      <div class="lc-name">Put-Away</div>
+      <div class="lc-desc">Se acomoda en bodega</div>
+    </div>
+    <div class="lc-step">
+      <div class="lc-dot" style="background:#E8FFD8">✅</div>
+      <span class="lc-num" style="background:#2D6A00">6</span>
+      <div class="lc-name">Disponible</div>
+      <div class="lc-desc">Inventario listo para vender</div>
+    </div>
+    <div class="lc-step">
+      <div class="lc-dot" style="background:#F5F1EC">🔒</div>
+      <span class="lc-num" style="background:#5A5045">7</span>
+      <div class="lc-name">Cerrado</div>
+      <div class="lc-desc">ASN cerrado, discrepancias registradas</div>
+    </div>
+  </div>
+
+  <!-- ESTADOS -->
+  <h2 class="section-heading">Estados de inventario</h2>
+  <p class="section-sub">Qué significa cada columna que ves en el sistema</p>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#B86A00">
+      <span class="icon">⏳</span>
+      <div class="name">Expected</div>
+      <div class="col-label">Columna: Expected</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades que ya tienen un ASN creado pero <strong>aún no han llegado</strong> al almacén físicamente.</p>
+      <div class="state-analogy"><strong>En simple</strong>Ya sabes que vienen, pero el camión todavía no llega.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#1B4FD8">
+      <span class="icon">🔄</span>
+      <div class="name">Processed</div>
+      <div class="col-label">Columna: Processed</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades que llegaron, se escanearon y se verificaron contra el ASN. <strong>Aún no están en ubicación</strong>.</p>
+      <div class="state-analogy"><strong>En simple</strong>Ya llegaron y ya las contamos, pero todavía están en el muelle.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#0E7C6B">
+      <span class="icon">📍</span>
+      <div class="name">Put-Away</div>
+      <div class="col-label">Columna: Put-Away</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades ya acomodadas en su <strong>ubicación física</strong> dentro del almacén. Paso previo a estar Available.</p>
+      <div class="state-analogy"><strong>En simple</strong>Ya están en su lugar del anaquel, listas para ser tomadas.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#166B3E">
+      <span class="icon">✅</span>
+      <div class="name">Available</div>
+      <div class="col-label">Columna: Available</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades <strong>libres y sin asignación</strong>. Pueden venderse y asignarse a nuevos pedidos en este momento.</p>
+      <div class="state-analogy"><strong>En simple</strong>Stock libre que el sistema puede vender ahora mismo.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#5B35B8">
+      <span class="icon">🔗</span>
+      <div class="name">Allocated</div>
+      <div class="col-label">Columna: Allocated</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades ya <strong>asignadas a un pedido</strong> específico. Reservadas, pero aún no han pasado por picking.</p>
+      <div class="state-analogy"><strong>En simple</strong>Tiene dueño, pero todavía no lo han ido a buscar al anaquel.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#A01860">
+      <span class="icon">🔒</span>
+      <div class="name">Reserved</div>
+      <div class="col-label">Columna: Reserved</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades <strong>bloqueadas manualmente</strong> o por reglas de negocio. No pueden asignarse a pedidos hasta liberarlas.</p>
+      <div class="state-analogy"><strong>En simple</strong>Guardadas bajo llave. Nadie las puede tocar hasta que alguien las libere.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#B86A00">
+      <span class="icon">🧺</span>
+      <div class="name">Picked</div>
+      <div class="col-label">Columna: Picked</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades que ya fueron <strong>tomadas del anaquel</strong> para un pedido. Están camino a la estación de empaque.</p>
+      <div class="state-analogy"><strong>En simple</strong>Ya las agarraron del estante — van directo a empacarse.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#1B4FD8">
+      <span class="icon">🏭</span>
+      <div class="name">On Hand</div>
+      <div class="col-label">Columna: On Hand</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def"><strong>Total de unidades físicamente</strong> dentro del almacén en este momento, en cualquier estado (Available + Allocated + Reserved + Picked).</p>
+      <div class="state-analogy"><strong>En simple</strong>Todo lo que está dentro de la bodega, sin importar su estado.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#C0311A">
+      <span class="icon">❗</span>
+      <div class="name">Backordered</div>
+      <div class="col-label">Columna: Backordered</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades que se vendieron pero <strong>no hay stock disponible</strong> para surtirlas. El pedido queda en espera.</p>
+      <div class="state-analogy"><strong>En simple</strong>Alguien compró algo que no tenemos. Le debemos el producto.</div>
+    </div>
+  </div>
+
+  <div class="state-card">
+    <div class="state-header" style="background:#5A5045">
+      <span class="icon">📢</span>
+      <div class="name">Advertised</div>
+      <div class="col-label">Columna: Advertised</div>
+    </div>
+    <div class="state-body">
+      <p class="state-def">Unidades <strong>publicadas o visibles</strong> en canales de venta. Lo que el cliente puede ver y comprar en la tienda.</p>
+      <div class="state-analogy"><strong>En simple</strong>Lo que está publicado en la tienda y puede comprar un cliente.</div>
+    </div>
+  </div>
+
+  <!-- TIERS -->
+  <h2 class="section-heading">Estados del producto (Tier)</h2>
+  <p class="section-sub">Etiquetas que clasifican el nivel de rotación de un SKU</p>
+
+  <div class="tier-grid">
+    <div class="tier-card">
+      <div class="tier-badge-bar" style="background:#D4F5E2">
+        <span class="tier-badge" style="background:#16A34A">New</span>
+      </div>
+      <div class="tier-body">
+        <div class="tier-title">Nuevo</div>
+        <div class="tier-desc">Producto recién dado de alta. Historial de ventas limitado o nulo. Todavía se está evaluando.</div>
+      </div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-badge-bar" style="background:#DBEAFE">
+        <span class="tier-badge" style="background:#1D4ED8">Tier 1</span>
+      </div>
+      <div class="tier-body">
+        <div class="tier-title">Top Seller</div>
+        <div class="tier-desc">Altísima rotación. Prioridad máxima de reabastecimiento. Siempre debe tener stock.</div>
+      </div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-badge-bar" style="background:#CFFAFE">
+        <span class="tier-badge" style="background:#0891B2">Tier 2</span>
+      </div>
+      <div class="tier-body">
+        <div class="tier-title">Buen desempeño</div>
+        <div class="tier-desc">Se vende bien y constante. Requiere atención regular pero no es crítico.</div>
+      </div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-badge-bar" style="background:#EDE9FE">
+        <span class="tier-badge" style="background:#7C3AED">Tier 3</span>
+      </div>
+      <div class="tier-body">
+        <div class="tier-title">Rotación media</div>
+        <div class="tier-desc">Venta moderada. Se monitorea su rendimiento. Puede subir o bajar según temporada.</div>
+      </div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-badge-bar" style="background:#FEE2E2">
+        <span class="tier-badge" style="background:#9A3412">Tier 4</span>
+      </div>
+      <div class="tier-body">
+        <div class="tier-title">Baja rotación</div>
+        <div class="tier-desc">Producto lento. Se evalúa si vale la pena mantenerlo en catálogo activo.</div>
+      </div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-badge-bar" style="background:#F5F5F4">
+        <span class="tier-badge" style="background:#78716C">Stale</span>
+      </div>
+      <div class="tier-body">
+        <div class="tier-title">Sin movimiento</div>
+        <div class="tier-desc">Sin ventas recientes. Candidato a liquidación, descontinuación o devolución.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMULA -->
+  <h2 class="section-heading">Fórmula de inventario</h2>
+  <p class="section-sub">Cómo se relacionan todos los estados entre sí</p>
+
+  <table class="formula-table">
+    <thead>
+      <tr>
+        <th>Concepto</th>
+        <th>Fórmula</th>
+        <th>Ejemplo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>On Hand</td><td>Available + Allocated + Reserved + Picked</td><td>Todo lo que hay físicamente en bodega</td></tr>
+      <tr><td>Available</td><td>On Hand − Allocated − Reserved − Picked</td><td>Lo que puedes vender ahora mismo</td></tr>
+      <tr><td>Sellable total</td><td>Available + Expected</td><td>Lo disponible + lo que viene en camino</td></tr>
+      <tr><td>Backordered</td><td>Pedidos confirmados − stock disponible</td><td>Lo que le debes a clientes</td></tr>
+      <tr><td>Advertised</td><td>Cantidad publicada en canales</td><td>Puede ser menor que Available por seguridad</td></tr>
+    </tbody>
+  </table>
+
+  <div style="display:flex;gap:12px;margin-top:8px">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border:2px solid var(--ink);border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600;font-size:0.88rem;background:#fff">← Inicio</a>
+    <a href="kitting.html" style="display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border:2px solid var(--ink);border-radius:8px;text-decoration:none;color:#fff;font-weight:600;font-size:0.88rem;background:var(--ink)">Siguiente: Kitting y Ensamble →</a>
+  </div>
+
+</main>
+</body>
+</html>
